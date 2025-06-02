@@ -1,6 +1,6 @@
 import { useGame } from "./GameContext";
 export default function Welcome() {
-  const { start, highScores } = useGame();
+  const { Start, highScores } = useGame();
 
   return (
     <>
@@ -8,7 +8,7 @@ export default function Welcome() {
         <p>Welcome to Whack a Mole!</p>
         <p>Whack a mole to earn points.</p>
         <p>How many can you get?</p>
-        <button onClick={start}>Play</button>
+        <button onClick={Start}>Play</button>
       </section>
       <section className="highscores">
         <h2>High Scores</h2>

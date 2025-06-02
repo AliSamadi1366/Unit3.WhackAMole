@@ -2,7 +2,7 @@ import { useGame } from "./GameContext";
 export default function Field() {
   const { field } = useGame();
   return (
-    <ul>
+    <ul className="field">
       {field.map((hasMole, i) => (
         <Hole key={i} hasMole={hasMole} />
       ))}

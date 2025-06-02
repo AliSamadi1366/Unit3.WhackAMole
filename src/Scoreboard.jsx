@@ -1,10 +1,10 @@
 import { useGame } from "./GameContext";
 export default function Scoreboard() {
-  const { score, stop } = useGame();
+  const { score, Stop } = useGame();
   return (
     <div className="scoreboard">
       <p>Score: {score}</p>
-      <button onClick={stop}>Restart</button>
+      <button onClick={Stop}>Restart</button>
     </div>
   );
 }
